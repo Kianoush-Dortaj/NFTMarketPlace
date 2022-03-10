@@ -1,5 +1,6 @@
 
 import { ILoginRepository } from "../Login/ILoginRepository";
+import { INFT } from "../NFT/INFT";
 import { IRegisterRepository } from "../Register/IRegisterRepository";
 import IUserRepository from "../User/IUserRepository";
 import { IUserActiveLevelRepository } from "../UserActiveLevel/IUserActiveLevelRepository";
@@ -13,4 +14,5 @@ export interface IUnitOfWork {
     userRepository: IUserRepository;
     LoginRepository: ILoginRepository;
     UserVerification : IUserVerificationRepository;
+    NFT:INFT;
 }

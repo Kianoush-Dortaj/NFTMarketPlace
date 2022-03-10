@@ -6,6 +6,7 @@ import config from './../../Configs/index';
 import OperationResult from "../../core/Operation/OperationResult";
 import { InternalServerError } from "../../core/ErrorHandler/DatabaseConectionError";
 import { IPFS } from "./ipfs";
+import { ResultCreateNFT } from "../../DTO/NFT/result-create-nft.model";
 const DNFT = require('./../../../build/contracts/DortajNFT.json');
 const NFT = require('./../../../build/contracts/NFT.json');
 
@@ -171,15 +172,16 @@ export class ContractConfig {
 
     }
 
-    static async CreateMarket(nftPrice: string, nftTokenId: string, fileAddress: string): Promise<OperationResult<any>> {
+    static async CreateMarket(nftPrice: string, fileAddress: string): Promise<OperationResult<ResultCreateNFT>> {
         try {
 
-            //Reading file from computer
             let testFile = fs.readFileSync(`${fileAddress}`);
-            //Creating buffer for ipfs function to add file to the system
             let testBuffer = new Buffer(testFile);
 
             const ipfs = await IPFS.UploadFile(testBuffer);
+            if (!ipfs.result) {
+                return OperationResult.BuildFailur(ipfs.message);
+            }
 
             let transaction = await this.tokenContract.mintToken(ipfs.result);
             const tx = await transaction.wait();
@@ -202,7 +204,12 @@ export class ContractConfig {
                 }
             );
 
-            return OperationResult.BuildSuccessResult("", true);
+            return OperationResult.BuildSuccessResult("", {
+                nftAddress: config.contractConfig.nftAddress,
+                price: ethers.utils.formatUnits(price.toString(), "ether"),
+                tokenId: tokenId,
+                imageUrl: ipfs.result
+            });
 
         } catch (error: any) {
 

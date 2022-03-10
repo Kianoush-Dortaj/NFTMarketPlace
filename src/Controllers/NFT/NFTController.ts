@@ -1,7 +1,10 @@
+import { privateDecrypt } from 'crypto';
 import { Request, Response, NextFunction } from 'express';
 import { BaseController } from "../../core/Controller/BaseController";
 import { InternalServerError } from '../../core/ErrorHandler/DatabaseConectionError';
+import UnitOfWork from '../../DataLayer/Repository/UnitOfWork/UnitOfWork';
 import { ContractConfig } from '../../utiles/contract/contract-config';
+import { Jwt } from '../../utiles/jwt/Jwt';
 
 export default new class NFTController extends BaseController {
 
@@ -125,16 +128,23 @@ export default new class NFTController extends BaseController {
 
             if (!validationData.haveError) {
 
-                const { nftPrice, nftTokenId, file } = req.body;
+                const { nftPrice, file, desciption, title, network } = req.body;
 
-                const createNFT = await ContractConfig.CreateMarket(nftPrice, nftTokenId, file);
+                let userId = (await Jwt.DecodeToken(req, res, next)).result;
+
+                const createNFT = await UnitOfWork.NFT.CreateNFT({
+                    createdBy: userId,
+                    description: desciption,
+                    file: file,
+                    network: network,
+                    owner: undefined,
+                    price: nftPrice,
+                    title: title
+                });
 
                 if (createNFT.success) {
 
-                    return this.OkObjectResult(res, {
-                        data: createNFT.result
-                    },
-                        "");
+                    return this.Ok(res, "");
 
                 }
 

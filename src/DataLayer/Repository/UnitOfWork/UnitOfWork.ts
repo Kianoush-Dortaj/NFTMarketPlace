@@ -12,6 +12,8 @@ import { ILoginRepository } from '../Login/ILoginRepository';
 import LoginRepository from '../Login/LoginRepository';
 import { IUserVerificationRepository } from '../UserVerification/IUserVerificationRepository';
 import UserVerificationRepository from '../UserVerification/UserVerificationRepository';
+import { NFT } from '../NFT/NFT';
+import { INFT } from '../NFT/INFT';
 
 export default new class UnitOfWork implements IUnitOfWork {
 
@@ -21,6 +23,7 @@ export default new class UnitOfWork implements IUnitOfWork {
     userRepository: IUserRepository;
     LoginRepository: ILoginRepository;
     UserVerification: IUserVerificationRepository;
+    NFT: INFT;
 
     constructor() {
 
@@ -30,6 +33,7 @@ export default new class UnitOfWork implements IUnitOfWork {
         this.userRepository = new UserRepository();
         this.LoginRepository = new LoginRepository();
         this.UserVerification = new UserVerificationRepository();
+        this.NFT = new NFT();
 
     }
 
