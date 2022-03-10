@@ -1,0 +1,4 @@
+{
+   "adapter": "node",
+   "$schema": "https://unpkg.com/typesafe-i18n@4.1.5/schema/typesafe-i18n.json"
+}

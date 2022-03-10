@@ -1,0 +1,60 @@
+
+syntax = "proto3";
+
+package cpay.cpl;
+
+service CpayCPL {
+    rpc GetRegisterSetting(GetRegisterSettingRequest) returns (GetRegisterSettingResponse) {}
+    rpc GetAllFiatCurrencySelectList(EmptyRequest) returns (GetAllFiatCurrencySelectListReponse) {}
+    rpc GetfiatCurrencyById(GetfiatCurrencyByIdRequest) returns (GetfiatCurrencyByIdReponse) {}
+
+}
+
+message EmptyRequest {
+    
+}
+
+message GetfiatCurrencyByIdRequest{
+    string id =1;
+}
+
+message GetfiatCurrencyByIdReponse{
+    OperationStatus operationStatus =1;
+    string operationMessage =2;
+    string id =3;
+    bool isPublish =4;
+    string name =5;
+    string currencyCode =6;
+    string logo =7;
+}
+
+message GetALlCurrencySelectList {
+    string currencyCode = 1;
+    string logo = 2;
+    string name = 3;
+    string id = 4;
+}
+
+message GetAllFiatCurrencySelectListReponse {
+   repeated GetALlCurrencySelectList result =1;
+   OperationStatus operationStatus =2;
+   string operationMessage =3;
+}
+
+message GetRegisterSettingRequest {
+    string settingType =1;
+}
+
+message GetRegisterSettingResponse {
+    OperationStatus operationStatus =1;
+    string operationMessage =2;
+    string   registerUserRole=3;
+    string  registerUserSupport=4;
+    string  registerUserAdmin=5;
+    string  setDefaultRegisterUserLevel=6;
+}
+
+enum OperationStatus {
+    SUCCESS =0 ;
+    FAIL = 1;
+}

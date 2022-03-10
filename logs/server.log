@@ -1,0 +1,381 @@
+error: Mar-09-2022 14:49:06: 	processing response error (body="{\"id\":54,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Please submit the asking price in order to continue\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Please submit the asking price in order to continue\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Please submit the asking price in order to continue\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x21e19e0c9bab2400000\",\"from\":\"0xffd00616520067885d406b8ee46e1a141ef530b1\",\"to\":\"0x8e4be2a3bd1169596c38952d8e837b20d419bcd1\",\"data\":\"0xc23b139e000000000000000000000000444f15b115ed9663dae46786a34aa3f6e8c0b57d0000000000000000000000000000000000000000000000000000000000000001\"}],\"id\":54,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-09-2022 14:49:06: 	processing response error (body="{\"id\":54,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Please submit the asking price in order to continue\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Please submit the asking price in order to continue\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Please submit the asking price in order to continue\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x21e19e0c9bab2400000\",\"from\":\"0xffd00616520067885d406b8ee46e1a141ef530b1\",\"to\":\"0x8e4be2a3bd1169596c38952d8e837b20d419bcd1\",\"data\":\"0xc23b139e000000000000000000000000444f15b115ed9663dae46786a34aa3f6e8c0b57d0000000000000000000000000000000000000000000000000000000000000001\"}],\"id\":54,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-09-2022 14:49:06: 	processing response error (body="{\"id\":54,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Please submit the asking price in order to continue\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Please submit the asking price in order to continue\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Please submit the asking price in order to continue\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x21e19e0c9bab2400000\",\"from\":\"0xffd00616520067885d406b8ee46e1a141ef530b1\",\"to\":\"0x8e4be2a3bd1169596c38952d8e837b20d419bcd1\",\"data\":\"0xc23b139e000000000000000000000000444f15b115ed9663dae46786a34aa3f6e8c0b57d0000000000000000000000000000000000000000000000000000000000000001\"}],\"id\":54,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-09-2022 14:49:06: 	We Have an Error in Server . Please Try again
+info: Mar-09-2022 14:56:15: 	Connect to Redis
+info: Mar-09-2022 14:56:16: 	Connecto To Databse
+info: Mar-09-2022 14:57:02: 	Connect to Redis
+info: Mar-09-2022 14:57:03: 	Connecto To Databse
+info: Mar-09-2022 14:59:59: 	Connect to Redis
+info: Mar-09-2022 14:59:59: 	Connecto To Databse
+info: Mar-09-2022 15:18:13: 	Connect to Redis
+info: Mar-09-2022 15:18:14: 	Connecto To Databse
+info: Mar-09-2022 15:20:00: 	Connect to Redis
+info: Mar-09-2022 15:20:01: 	Connecto To Databse
+info: Mar-09-2022 15:20:05: 	Connect to Redis
+info: Mar-09-2022 15:20:06: 	Connecto To Databse
+info: Mar-09-2022 15:22:47: 	Connect to Redis
+info: Mar-09-2022 15:22:48: 	Connecto To Databse
+info: Mar-09-2022 15:31:45: 	Connect to Redis
+info: Mar-09-2022 15:31:45: 	Connecto To Databse
+info: Mar-09-2022 15:31:50: 	Connect to Redis
+info: Mar-09-2022 15:31:51: 	Connecto To Databse
+info: Mar-09-2022 15:33:03: 	Connect to Redis
+info: Mar-09-2022 15:33:04: 	Connecto To Databse
+info: Mar-09-2022 15:34:54: 	Connect to Redis
+info: Mar-09-2022 15:34:54: 	Connecto To Databse
+error: Mar-09-2022 15:34:55: 	undefined
+error: Mar-09-2022 15:34:55: 	
+error: Mar-09-2022 15:34:55: 	
+error: Mar-09-2022 15:34:55: 	We Have an Error in Server . Please Try again
+error: Mar-09-2022 15:35:17: 	undefined
+error: Mar-09-2022 15:35:17: 	
+error: Mar-09-2022 15:35:17: 	
+error: Mar-09-2022 15:35:17: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 15:35:54: 	Connect to Redis
+info: Mar-09-2022 15:35:55: 	Connecto To Databse
+error: Mar-09-2022 15:36:02: 	undefined
+error: Mar-09-2022 15:36:02: 	
+error: Mar-09-2022 15:36:02: 	
+error: Mar-09-2022 15:36:02: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 15:36:44: 	Connect to Redis
+info: Mar-09-2022 15:36:44: 	Connecto To Databse
+error: Mar-09-2022 15:36:47: 	undefined
+error: Mar-09-2022 15:36:47: 	
+error: Mar-09-2022 15:36:47: 	
+error: Mar-09-2022 15:36:47: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 15:37:06: 	Connect to Redis
+info: Mar-09-2022 15:37:07: 	Connecto To Databse
+info: Mar-09-2022 15:37:16: 	Connect to Redis
+info: Mar-09-2022 15:37:17: 	Connecto To Databse
+error: Mar-09-2022 15:37:23: 	undefined
+error: Mar-09-2022 15:37:23: 	
+error: Mar-09-2022 15:37:23: 	
+error: Mar-09-2022 15:37:23: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 15:38:04: 	Connect to Redis
+info: Mar-09-2022 15:38:04: 	Connecto To Databse
+error: Mar-09-2022 15:38:06: 	undefined
+error: Mar-09-2022 15:38:06: 	
+error: Mar-09-2022 15:38:06: 	
+error: Mar-09-2022 15:38:06: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 15:38:27: 	Connect to Redis
+info: Mar-09-2022 15:38:28: 	Connecto To Databse
+error: Mar-09-2022 15:38:29: 	undefined
+error: Mar-09-2022 15:38:29: 	
+error: Mar-09-2022 15:38:29: 	
+error: Mar-09-2022 15:38:29: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 15:38:47: 	Connect to Redis
+info: Mar-09-2022 15:38:47: 	Connecto To Databse
+error: Mar-09-2022 15:38:48: 	undefined
+error: Mar-09-2022 15:38:48: 	
+error: Mar-09-2022 15:38:48: 	
+error: Mar-09-2022 15:38:48: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 15:38:57: 	Connect to Redis
+info: Mar-09-2022 15:38:58: 	Connecto To Databse
+info: Mar-09-2022 15:39:13: 	Connect to Redis
+info: Mar-09-2022 15:39:14: 	Connecto To Databse
+error: Mar-09-2022 15:39:14: 	undefined
+error: Mar-09-2022 15:39:14: 	
+error: Mar-09-2022 15:39:14: 	
+error: Mar-09-2022 15:39:14: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 15:41:49: 	Connect to Redis
+info: Mar-09-2022 15:41:50: 	Connecto To Databse
+info: Mar-09-2022 15:42:22: 	Connect to Redis
+info: Mar-09-2022 15:42:22: 	Connecto To Databse
+error: Mar-09-2022 15:42:31: 	undefined
+error: Mar-09-2022 15:42:31: 	
+error: Mar-09-2022 15:42:31: 	
+error: Mar-09-2022 15:42:31: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 15:42:38: 	Connect to Redis
+info: Mar-09-2022 15:42:39: 	Connecto To Databse
+info: Mar-09-2022 15:43:16: 	Connect to Redis
+info: Mar-09-2022 15:43:17: 	Connecto To Databse
+info: Mar-09-2022 15:44:45: 	Connect to Redis
+info: Mar-09-2022 15:44:45: 	Connecto To Databse
+info: Mar-09-2022 15:45:02: 	Connect to Redis
+info: Mar-09-2022 15:45:02: 	Connecto To Databse
+info: Mar-09-2022 15:46:00: 	Connect to Redis
+info: Mar-09-2022 15:46:01: 	Connecto To Databse
+info: Mar-09-2022 15:47:59: 	Connect to Redis
+info: Mar-09-2022 15:48:16: 	Connect to Redis
+info: Mar-09-2022 15:48:49: 	Connect to Redis
+info: Mar-09-2022 15:48:49: 	Connecto To Databse
+info: Mar-09-2022 15:49:36: 	Connect to Redis
+info: Mar-09-2022 15:49:37: 	Connecto To Databse
+info: Mar-09-2022 16:00:42: 	Connect to Redis
+info: Mar-09-2022 16:00:43: 	Connecto To Databse
+info: Mar-09-2022 16:11:05: 	Connect to Redis
+info: Mar-09-2022 16:11:06: 	Connecto To Databse
+info: Mar-09-2022 16:11:35: 	Connect to Redis
+info: Mar-09-2022 16:11:36: 	Connecto To Databse
+info: Mar-09-2022 16:11:45: 	Connect to Redis
+info: Mar-09-2022 16:11:46: 	Connecto To Databse
+error: Mar-09-2022 16:43:22: 	Error Connect ot Redis
+error: Mar-09-2022 16:43:22: 	Error Connect ot Redis
+info: Mar-09-2022 16:43:24: 	Connect to Redis
+error: Mar-09-2022 16:54:36: 	undefined
+error: Mar-09-2022 16:54:36: 	
+error: Mar-09-2022 16:54:36: 	
+error: Mar-09-2022 16:54:36: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 16:54:55: 	Connect to Redis
+info: Mar-09-2022 16:54:55: 	Connecto To Databse
+error: Mar-09-2022 16:54:58: 	undefined
+error: Mar-09-2022 16:54:58: 	
+error: Mar-09-2022 16:54:58: 	
+error: Mar-09-2022 16:54:58: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 17:03:13: 	Connect to Redis
+info: Mar-09-2022 17:03:14: 	Connecto To Databse
+info: Mar-09-2022 17:11:00: 	Connect to Redis
+info: Mar-09-2022 17:11:01: 	Connecto To Databse
+error: Mar-09-2022 17:11:05: 	undefined
+error: Mar-09-2022 17:11:05: 	
+error: Mar-09-2022 17:11:05: 	
+error: Mar-09-2022 17:11:05: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 17:23:04: 	Connect to Redis
+info: Mar-09-2022 17:23:04: 	Connecto To Databse
+error: Mar-09-2022 17:23:08: 	undefined
+error: Mar-09-2022 17:23:08: 	
+error: Mar-09-2022 17:23:08: 	
+error: Mar-09-2022 17:23:08: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 17:23:48: 	Connect to Redis
+info: Mar-09-2022 17:23:49: 	Connecto To Databse
+info: Mar-09-2022 17:24:01: 	Connect to Redis
+info: Mar-09-2022 17:24:01: 	Connecto To Databse
+info: Mar-09-2022 17:25:35: 	Connect to Redis
+info: Mar-09-2022 17:25:36: 	Connecto To Databse
+error: Mar-09-2022 17:25:37: 	undefined
+error: Mar-09-2022 17:25:37: 	
+error: Mar-09-2022 17:25:37: 	
+error: Mar-09-2022 17:25:37: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 17:26:09: 	Connect to Redis
+info: Mar-09-2022 17:26:10: 	Connecto To Databse
+info: Mar-09-2022 17:27:30: 	Connect to Redis
+info: Mar-09-2022 17:27:31: 	Connecto To Databse
+error: Mar-09-2022 17:27:34: 	undefined
+error: Mar-09-2022 17:27:34: 	
+error: Mar-09-2022 17:27:34: 	
+error: Mar-09-2022 17:27:34: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-09-2022 17:31:36: 	Connect to Redis
+info: Mar-09-2022 17:31:37: 	Connecto To Databse
+error: Mar-09-2022 17:31:38: 	undefined
+error: Mar-09-2022 17:31:38: 	
+error: Mar-09-2022 17:31:38: 	
+error: Mar-09-2022 17:31:38: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 08:47:45: 	Connect to Redis
+info: Mar-10-2022 08:47:46: 	Connecto To Databse
+error: Mar-10-2022 08:47:49: 	undefined
+error: Mar-10-2022 08:47:49: 	
+error: Mar-10-2022 08:47:49: 	
+error: Mar-10-2022 08:47:49: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 08:49:25: 	Connect to Redis
+info: Mar-10-2022 08:49:25: 	Connecto To Databse
+info: Mar-10-2022 08:50:50: 	Connect to Redis
+info: Mar-10-2022 08:50:51: 	Connecto To Databse
+error: Mar-10-2022 08:50:53: 	undefined
+error: Mar-10-2022 08:50:53: 	
+error: Mar-10-2022 08:50:53: 	
+error: Mar-10-2022 08:50:53: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 08:51:34: 	Connect to Redis
+info: Mar-10-2022 08:51:35: 	Connecto To Databse
+error: Mar-10-2022 08:51:39: 	undefined
+error: Mar-10-2022 08:51:39: 	
+error: Mar-10-2022 08:51:39: 	
+error: Mar-10-2022 08:51:39: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 08:51:55: 	Connect to Redis
+info: Mar-10-2022 08:51:56: 	Connecto To Databse
+info: Mar-10-2022 08:52:09: 	Connect to Redis
+info: Mar-10-2022 08:52:10: 	Connecto To Databse
+error: Mar-10-2022 08:52:12: 	undefined
+error: Mar-10-2022 08:52:12: 	
+error: Mar-10-2022 08:52:12: 	
+error: Mar-10-2022 08:52:12: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 09:25:36: 	Connect to Redis
+info: Mar-10-2022 09:25:37: 	Connecto To Databse
+error: Mar-10-2022 09:25:41: 	undefined
+error: Mar-10-2022 09:25:41: 	
+error: Mar-10-2022 09:25:41: 	
+error: Mar-10-2022 09:25:41: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 09:25:44: 	Connect to Redis
+info: Mar-10-2022 09:25:45: 	Connecto To Databse
+info: Mar-10-2022 09:28:17: 	Connect to Redis
+info: Mar-10-2022 09:28:17: 	Connecto To Databse
+error: Mar-10-2022 09:28:23: 	undefined
+error: Mar-10-2022 09:28:23: 	
+error: Mar-10-2022 09:28:23: 	
+error: Mar-10-2022 09:28:23: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 09:28:58: 	Connect to Redis
+info: Mar-10-2022 09:28:59: 	Connecto To Databse
+error: Mar-10-2022 09:29:02: 	undefined
+error: Mar-10-2022 09:29:02: 	
+error: Mar-10-2022 09:29:02: 	
+error: Mar-10-2022 09:29:02: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 09:29:17: 	Connect to Redis
+info: Mar-10-2022 09:29:17: 	Connecto To Databse
+info: Mar-10-2022 09:34:17: 	Connect to Redis
+info: Mar-10-2022 09:34:17: 	Connecto To Databse
+info: Mar-10-2022 09:35:56: 	Connect to Redis
+info: Mar-10-2022 09:35:56: 	Connecto To Databse
+info: Mar-10-2022 09:36:04: 	Connect to Redis
+info: Mar-10-2022 09:36:05: 	Connecto To Databse
+error: Mar-10-2022 09:36:07: 	undefined
+error: Mar-10-2022 09:36:07: 	
+error: Mar-10-2022 09:36:07: 	
+error: Mar-10-2022 09:36:07: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 09:36:28: 	Connect to Redis
+info: Mar-10-2022 09:36:29: 	Connecto To Databse
+info: Mar-10-2022 09:36:39: 	Connect to Redis
+info: Mar-10-2022 09:36:40: 	Connecto To Databse
+info: Mar-10-2022 09:38:23: 	Connect to Redis
+info: Mar-10-2022 09:38:24: 	Connecto To Databse
+info: Mar-10-2022 09:38:36: 	Connect to Redis
+info: Mar-10-2022 09:38:37: 	Connecto To Databse
+info: Mar-10-2022 09:44:00: 	Connect to Redis
+info: Mar-10-2022 09:44:01: 	Connecto To Databse
+error: Mar-10-2022 09:44:41: 	Cannot read properties of undefined (reading 'backImage')
+info: Mar-10-2022 09:44:57: 	Connect to Redis
+info: Mar-10-2022 09:44:58: 	Connecto To Databse
+info: Mar-10-2022 09:46:34: 	Connect to Redis
+info: Mar-10-2022 09:46:34: 	Connecto To Databse
+info: Mar-10-2022 09:48:58: 	Connect to Redis
+info: Mar-10-2022 09:48:58: 	Connecto To Databse
+error: Mar-10-2022 09:48:59: 	Cannot read properties of undefined (reading 'file')
+info: Mar-10-2022 09:49:54: 	Connect to Redis
+info: Mar-10-2022 09:49:55: 	Connecto To Databse
+info: Mar-10-2022 09:50:10: 	Connect to Redis
+info: Mar-10-2022 09:50:11: 	Connecto To Databse
+error: Mar-10-2022 09:50:11: 	Cannot read properties of undefined (reading 'file')
+info: Mar-10-2022 09:50:27: 	Connect to Redis
+info: Mar-10-2022 09:50:28: 	Connecto To Databse
+error: Mar-10-2022 09:50:29: 	Cannot read properties of undefined (reading 'file')
+info: Mar-10-2022 09:50:56: 	Connect to Redis
+info: Mar-10-2022 09:50:57: 	Connecto To Databse
+info: Mar-10-2022 09:52:42: 	Connect to Redis
+info: Mar-10-2022 09:52:42: 	Connecto To Databse
+info: Mar-10-2022 09:52:46: 	Connect to Redis
+info: Mar-10-2022 09:52:47: 	Connecto To Databse
+error: Mar-10-2022 09:52:48: 	undefined
+error: Mar-10-2022 09:52:48: 	
+error: Mar-10-2022 09:52:48: 	
+error: Mar-10-2022 09:52:48: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 09:53:57: 	Connect to Redis
+info: Mar-10-2022 09:53:57: 	Connecto To Databse
+error: Mar-10-2022 09:54:00: 	undefined
+error: Mar-10-2022 09:54:00: 	
+error: Mar-10-2022 09:54:00: 	
+error: Mar-10-2022 09:54:00: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 09:56:52: 	Connect to Redis
+info: Mar-10-2022 09:56:52: 	Connecto To Databse
+error: Mar-10-2022 09:56:54: 	undefined
+error: Mar-10-2022 09:56:54: 	
+error: Mar-10-2022 09:56:54: 	
+error: Mar-10-2022 09:56:54: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 10:01:11: 	Connect to Redis
+info: Mar-10-2022 10:01:11: 	Connecto To Databse
+info: Mar-10-2022 10:02:48: 	Connect to Redis
+info: Mar-10-2022 10:02:49: 	Connecto To Databse
+error: Mar-10-2022 10:02:55: 	undefined
+error: Mar-10-2022 10:02:55: 	
+error: Mar-10-2022 10:02:55: 	
+error: Mar-10-2022 10:02:55: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 10:04:35: 	Connect to Redis
+info: Mar-10-2022 10:04:36: 	Connecto To Databse
+error: Mar-10-2022 10:04:37: 	undefined
+error: Mar-10-2022 10:04:37: 	
+error: Mar-10-2022 10:04:37: 	
+error: Mar-10-2022 10:04:37: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 10:06:57: 	Connect to Redis
+info: Mar-10-2022 10:06:58: 	Connecto To Databse
+error: Mar-10-2022 10:06:58: 	undefined
+error: Mar-10-2022 10:06:58: 	
+error: Mar-10-2022 10:06:58: 	
+error: Mar-10-2022 10:06:58: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 10:07:08: 	Connect to Redis
+error: Mar-10-2022 10:07:09: 	undefined
+error: Mar-10-2022 10:07:09: 	
+info: Mar-10-2022 10:07:09: 	Connecto To Databse
+error: Mar-10-2022 10:07:09: 	
+error: Mar-10-2022 10:07:09: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 10:07:47: 	Connect to Redis
+info: Mar-10-2022 10:07:48: 	Connecto To Databse
+error: Mar-10-2022 10:07:50: 	undefined
+error: Mar-10-2022 10:07:50: 	
+error: Mar-10-2022 10:07:50: 	
+error: Mar-10-2022 10:07:50: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 10:09:32: 	Connect to Redis
+info: Mar-10-2022 10:09:33: 	Connecto To Databse
+info: Mar-10-2022 10:10:15: 	Connect to Redis
+info: Mar-10-2022 10:10:15: 	Connecto To Databse
+info: Mar-10-2022 10:11:50: 	Connect to Redis
+info: Mar-10-2022 10:11:51: 	Connecto To Databse
+info: Mar-10-2022 10:12:29: 	Connect to Redis
+info: Mar-10-2022 10:12:30: 	Connecto To Databse
+info: Mar-10-2022 10:13:41: 	Connect to Redis
+info: Mar-10-2022 10:13:42: 	Connecto To Databse
+info: Mar-10-2022 10:14:40: 	Connect to Redis
+info: Mar-10-2022 10:14:41: 	Connecto To Databse
+info: Mar-10-2022 10:14:45: 	Connect to Redis
+info: Mar-10-2022 10:14:46: 	Connecto To Databse
+info: Mar-10-2022 10:16:22: 	Connect to Redis
+info: Mar-10-2022 10:16:23: 	Connecto To Databse
+error: Mar-10-2022 10:16:40: 	call revert exception (method="getListingPrice()", errorArgs=null, errorName=null, errorSignature=null, reason=null, code=CALL_EXCEPTION, version=abi/5.5.0)
+error: Mar-10-2022 10:16:40: 	undefined
+error: Mar-10-2022 10:16:40: 	
+error: Mar-10-2022 10:16:40: 	
+error: Mar-10-2022 10:16:40: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+error: Mar-10-2022 10:17:05: 	call revert exception (method="getListingPrice()", errorArgs=null, errorName=null, errorSignature=null, reason=null, code=CALL_EXCEPTION, version=abi/5.5.0)
+error: Mar-10-2022 10:17:05: 	undefined
+error: Mar-10-2022 10:17:05: 	
+error: Mar-10-2022 10:17:05: 	
+error: Mar-10-2022 10:17:05: 	در سرور خطایی رخ داده است . لطفا مجدد تلاش کنید
+info: Mar-10-2022 10:18:27: 	Connect to Redis
+info: Mar-10-2022 10:18:28: 	Connecto To Databse
+info: Mar-10-2022 10:21:39: 	Connect to Redis
+info: Mar-10-2022 10:21:39: 	Connecto To Databse
+info: Mar-10-2022 10:22:42: 	Connect to Redis
+info: Mar-10-2022 10:22:43: 	Connecto To Databse
+info: Mar-10-2022 10:25:18: 	Connect to Redis
+info: Mar-10-2022 10:25:19: 	Connecto To Databse
+info: Mar-10-2022 10:26:00: 	Connect to Redis
+info: Mar-10-2022 10:26:01: 	Connecto To Databse
+info: Mar-10-2022 10:29:19: 	Connect to Redis
+info: Mar-10-2022 10:29:19: 	Connecto To Databse
+info: Mar-10-2022 10:29:39: 	Connect to Redis
+info: Mar-10-2022 10:29:39: 	Connecto To Databse
+info: Mar-10-2022 10:30:05: 	Connect to Redis
+info: Mar-10-2022 10:30:05: 	Connecto To Databse
+info: Mar-10-2022 10:45:00: 	Connect to Redis
+info: Mar-10-2022 10:45:00: 	Connecto To Databse
+error: Mar-10-2022 10:45:37: 	processing response error (body="{\"id\":48,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Item not Exsist\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x3e8\",\"from\":\"0x8b2275d769750a00bfc6be9d5c9ebd1151d4c2f2\",\"to\":\"0x8d70fc17570cf71d73d2f7dce22a40314846ef26\",\"data\":\"0xc23b139e0000000000000000000000008d0fbad020908642fb8e43a43f8e108b15b593ff0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":48,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:45:37: 	processing response error (body="{\"id\":48,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Item not Exsist\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x3e8\",\"from\":\"0x8b2275d769750a00bfc6be9d5c9ebd1151d4c2f2\",\"to\":\"0x8d70fc17570cf71d73d2f7dce22a40314846ef26\",\"data\":\"0xc23b139e0000000000000000000000008d0fbad020908642fb8e43a43f8e108b15b593ff0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":48,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:45:37: 	processing response error (body="{\"id\":48,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Item not Exsist\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x3e8\",\"from\":\"0x8b2275d769750a00bfc6be9d5c9ebd1151d4c2f2\",\"to\":\"0x8d70fc17570cf71d73d2f7dce22a40314846ef26\",\"data\":\"0xc23b139e0000000000000000000000008d0fbad020908642fb8e43a43f8e108b15b593ff0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":48,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:45:37: 	We Have an Error in Server . Please Try again
+info: Mar-10-2022 10:46:01: 	Connect to Redis
+info: Mar-10-2022 10:46:02: 	Connecto To Databse
+error: Mar-10-2022 10:46:03: 	processing response error (body="{\"id\":48,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Item not Exsist\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x3e8\",\"from\":\"0x8b2275d769750a00bfc6be9d5c9ebd1151d4c2f2\",\"to\":\"0x8d70fc17570cf71d73d2f7dce22a40314846ef26\",\"data\":\"0xc23b139e0000000000000000000000008d0fbad020908642fb8e43a43f8e108b15b593ff0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":48,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:46:03: 	processing response error (body="{\"id\":48,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Item not Exsist\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x3e8\",\"from\":\"0x8b2275d769750a00bfc6be9d5c9ebd1151d4c2f2\",\"to\":\"0x8d70fc17570cf71d73d2f7dce22a40314846ef26\",\"data\":\"0xc23b139e0000000000000000000000008d0fbad020908642fb8e43a43f8e108b15b593ff0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":48,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:46:03: 	processing response error (body="{\"id\":48,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Item not Exsist\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x3e8\",\"from\":\"0x8b2275d769750a00bfc6be9d5c9ebd1151d4c2f2\",\"to\":\"0x8d70fc17570cf71d73d2f7dce22a40314846ef26\",\"data\":\"0xc23b139e0000000000000000000000008d0fbad020908642fb8e43a43f8e108b15b593ff0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":48,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:46:03: 	We Have an Error in Server . Please Try again
+info: Mar-10-2022 10:46:31: 	Connect to Redis
+info: Mar-10-2022 10:46:31: 	Connecto To Databse
+info: Mar-10-2022 10:48:11: 	Connect to Redis
+info: Mar-10-2022 10:48:11: 	Connecto To Databse
+error: Mar-10-2022 10:48:25: 	processing response error (body="{\"id\":48,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Item not Exsist\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x3e8\",\"from\":\"0x8b2275d769750a00bfc6be9d5c9ebd1151d4c2f2\",\"to\":\"0x8d70fc17570cf71d73d2f7dce22a40314846ef26\",\"data\":\"0xc23b139e0000000000000000000000008d0fbad020908642fb8e43a43f8e108b15b593ff0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":48,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:48:25: 	processing response error (body="{\"id\":48,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Item not Exsist\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x3e8\",\"from\":\"0x8b2275d769750a00bfc6be9d5c9ebd1151d4c2f2\",\"to\":\"0x8d70fc17570cf71d73d2f7dce22a40314846ef26\",\"data\":\"0xc23b139e0000000000000000000000008d0fbad020908642fb8e43a43f8e108b15b593ff0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":48,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:48:25: 	processing response error (body="{\"id\":48,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"VM Exception while processing transaction: revert Item not Exsist\",\"code\":-32000,\"data\":{\"stack\":\"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\\n    at Function.RuntimeError.fromResults (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\runtimeerror.js:94:13)\\n    at module.exports (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\lib\\\\utils\\\\gas\\\\guestimation.js:142:32)\",\"name\":\"RuntimeError\"}}}", error={"code":-32000,"data":{"stack":"RuntimeError: VM Exception while processing transaction: revert Item not Exsist\n    at Function.RuntimeError.fromResults (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\runtimeerror.js:94:13)\n    at module.exports (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\lib\\utils\\gas\\guestimation.js:142:32)","name":"RuntimeError"}}, requestBody="{\"method\":\"eth_estimateGas\",\"params\":[{\"value\":\"0x3e8\",\"from\":\"0x8b2275d769750a00bfc6be9d5c9ebd1151d4c2f2\",\"to\":\"0x8d70fc17570cf71d73d2f7dce22a40314846ef26\",\"data\":\"0xc23b139e0000000000000000000000008d0fbad020908642fb8e43a43f8e108b15b593ff0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":48,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:48:25: 	We Have an Error in Server . Please Try again
+info: Mar-10-2022 10:52:00: 	Connect to Redis
+info: Mar-10-2022 10:52:01: 	Connecto To Databse
+info: Mar-10-2022 10:52:47: 	Connect to Redis
+info: Mar-10-2022 10:52:47: 	Connecto To Databse
+error: Mar-10-2022 10:58:15: 	processing response error (body="{\"id\":212,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"sender doesn't have enough funds to send tx. The upfront cost is: 100002571100000000000 and the sender's account only has: 99789454920000000000\",\"code\":-32000,\"data\":{\"stack\":\"Error: sender doesn't have enough funds to send tx. The upfront cost is: 100002571100000000000 and the sender's account only has: 99789454920000000000\\n    at VM.<anonymous> (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\lib\\\\runTx.ts:114:11)\\n    at step (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\dist\\\\runTx.js:33:23)\\n    at Object.next (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\dist\\\\runTx.js:14:53)\\n    at fulfilled (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\dist\\\\runTx.js:5:58)\\n    at runMicrotasks (<anonymous>)\\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\",\"name\":\"Error\"}}}", error={"code":-32000,"data":{"stack":"Error: sender doesn't have enough funds to send tx. The upfront cost is: 100002571100000000000 and the sender's account only has: 99789454920000000000\n    at VM.<anonymous> (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\lib\\runTx.ts:114:11)\n    at step (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\dist\\runTx.js:33:23)\n    at Object.next (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\dist\\runTx.js:14:53)\n    at fulfilled (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\dist\\runTx.js:5:58)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","name":"Error"}}, requestBody="{\"method\":\"eth_sendTransaction\",\"params\":[{\"gas\":\"0x1f62b\",\"value\":\"0x56bc75e2d63100000\",\"from\":\"0xfe6b71fa71f64095990fcd7ec7f33b9668ac120d\",\"to\":\"0xc55da67d4d491dc62626744e0d267175564ad29b\",\"data\":\"0xc23b139e000000000000000000000000760028e845f409a54a44535d4451f9048570ba3b0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":212,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:58:15: 	processing response error (body="{\"id\":212,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"sender doesn't have enough funds to send tx. The upfront cost is: 100002571100000000000 and the sender's account only has: 99789454920000000000\",\"code\":-32000,\"data\":{\"stack\":\"Error: sender doesn't have enough funds to send tx. The upfront cost is: 100002571100000000000 and the sender's account only has: 99789454920000000000\\n    at VM.<anonymous> (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\lib\\\\runTx.ts:114:11)\\n    at step (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\dist\\\\runTx.js:33:23)\\n    at Object.next (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\dist\\\\runTx.js:14:53)\\n    at fulfilled (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\dist\\\\runTx.js:5:58)\\n    at runMicrotasks (<anonymous>)\\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\",\"name\":\"Error\"}}}", error={"code":-32000,"data":{"stack":"Error: sender doesn't have enough funds to send tx. The upfront cost is: 100002571100000000000 and the sender's account only has: 99789454920000000000\n    at VM.<anonymous> (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\lib\\runTx.ts:114:11)\n    at step (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\dist\\runTx.js:33:23)\n    at Object.next (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\dist\\runTx.js:14:53)\n    at fulfilled (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\dist\\runTx.js:5:58)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","name":"Error"}}, requestBody="{\"method\":\"eth_sendTransaction\",\"params\":[{\"gas\":\"0x1f62b\",\"value\":\"0x56bc75e2d63100000\",\"from\":\"0xfe6b71fa71f64095990fcd7ec7f33b9668ac120d\",\"to\":\"0xc55da67d4d491dc62626744e0d267175564ad29b\",\"data\":\"0xc23b139e000000000000000000000000760028e845f409a54a44535d4451f9048570ba3b0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":212,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:58:15: 	processing response error (body="{\"id\":212,\"jsonrpc\":\"2.0\",\"error\":{\"message\":\"sender doesn't have enough funds to send tx. The upfront cost is: 100002571100000000000 and the sender's account only has: 99789454920000000000\",\"code\":-32000,\"data\":{\"stack\":\"Error: sender doesn't have enough funds to send tx. The upfront cost is: 100002571100000000000 and the sender's account only has: 99789454920000000000\\n    at VM.<anonymous> (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\lib\\\\runTx.ts:114:11)\\n    at step (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\dist\\\\runTx.js:33:23)\\n    at Object.next (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\dist\\\\runTx.js:14:53)\\n    at fulfilled (C:\\\\Program Files\\\\WindowsApps\\\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\\\app\\\\resources\\\\static\\\\node\\\\node_modules\\\\ganache-core\\\\node_modules\\\\ethereumjs-vm\\\\dist\\\\runTx.js:5:58)\\n    at runMicrotasks (<anonymous>)\\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\",\"name\":\"Error\"}}}", error={"code":-32000,"data":{"stack":"Error: sender doesn't have enough funds to send tx. The upfront cost is: 100002571100000000000 and the sender's account only has: 99789454920000000000\n    at VM.<anonymous> (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\lib\\runTx.ts:114:11)\n    at step (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\dist\\runTx.js:33:23)\n    at Object.next (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\dist\\runTx.js:14:53)\n    at fulfilled (C:\\Program Files\\WindowsApps\\GanacheUI_2.5.4.0_x64__5dg5pnz03psnj\\app\\resources\\static\\node\\node_modules\\ganache-core\\node_modules\\ethereumjs-vm\\dist\\runTx.js:5:58)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)","name":"Error"}}, requestBody="{\"method\":\"eth_sendTransaction\",\"params\":[{\"gas\":\"0x1f62b\",\"value\":\"0x56bc75e2d63100000\",\"from\":\"0xfe6b71fa71f64095990fcd7ec7f33b9668ac120d\",\"to\":\"0xc55da67d4d491dc62626744e0d267175564ad29b\",\"data\":\"0xc23b139e000000000000000000000000760028e845f409a54a44535d4451f9048570ba3b0000000000000000000000000000000000000000000000000000000000000003\"}],\"id\":212,\"jsonrpc\":\"2.0\"}", requestMethod="POST", url="HTTP://127.0.0.1:7545", code=SERVER_ERROR, version=web/5.5.1)
+error: Mar-10-2022 10:58:15: 	We Have an Error in Server . Please Try again
+info: Mar-10-2022 11:01:51: 	Connect to Redis
+info: Mar-10-2022 11:01:51: 	Connecto To Databse
+info: Mar-10-2022 11:13:55: 	Connect to Redis
+info: Mar-10-2022 11:13:56: 	Connecto To Databse
+info: Mar-10-2022 14:58:37: 	Connect to Redis
+info: Mar-10-2022 14:58:38: 	Connecto To Databse
+info: Mar-10-2022 15:00:19: 	Connect to Redis
+info: Mar-10-2022 15:00:19: 	Connecto To Databse
