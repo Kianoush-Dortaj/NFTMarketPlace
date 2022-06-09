@@ -9,8 +9,6 @@ import uniqueString from 'unique-string';
 
 export class Utiles {
 
-
-
     static acceptLanguage(req: any): Locales {
         const lang = req.headers["accept-language"] ? req.headers["accept-language"] : 'en';
         const local = locales.find(x => x == lang);
@@ -99,7 +97,7 @@ export class Utiles {
                     hash: hash
                 })
             }
-            
+
             return OperationResult.BuildFailur(setValue.message);
 
         } catch (error: any) {

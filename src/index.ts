@@ -12,6 +12,7 @@ import UnitOfWork from './DataLayer/Repository/UnitOfWork/UnitOfWork';
 import { Utiles } from './utiles/utiles';
 import router from './router/Router';
 import { ContractConfig } from './utiles/contract/contract-config';
+import { TransactionWeb3 } from './utiles/web3-config/web3-config';
 
 export default new class Startup {
 
@@ -19,14 +20,14 @@ export default new class Startup {
     app = express();
 
     constructor() {
-
+        TransactionWeb3.Initialweb3();
         ContractConfig.Initial();
         Translate.InitialConfig();
         WinstonLogger.Config();
         this.CreateServer();
         NodeMailer.Config();
         this.ConfigMidllware();
-        this.ConfigDatabase();
+        // this.ConfigDatabase();
 
     }
 

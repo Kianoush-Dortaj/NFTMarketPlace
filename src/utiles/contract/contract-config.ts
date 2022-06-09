@@ -179,6 +179,7 @@ export class ContractConfig {
             let testBuffer = new Buffer(testFile);
 
             const ipfs = await IPFS.UploadFile(testBuffer);
+
             if (!ipfs.result) {
                 return OperationResult.BuildFailur(ipfs.message);
             }

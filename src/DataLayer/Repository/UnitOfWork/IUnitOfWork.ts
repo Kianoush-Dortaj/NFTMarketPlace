@@ -2,6 +2,7 @@
 import { ILoginRepository } from "../Login/ILoginRepository";
 import { INFT } from "../NFT/INFT";
 import { IRegisterRepository } from "../Register/IRegisterRepository";
+import { ITransaction } from "../Transactions/ITransactions";
 import IUserRepository from "../User/IUserRepository";
 import { IUserActiveLevelRepository } from "../UserActiveLevel/IUserActiveLevelRepository";
 import { IUserSettingRepository } from "../UserSetting/IUserSettingRepository";
@@ -15,4 +16,5 @@ export interface IUnitOfWork {
     LoginRepository: ILoginRepository;
     UserVerification : IUserVerificationRepository;
     NFT:INFT;
+    TransactionInfo:ITransaction;
 }
