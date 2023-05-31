@@ -16,8 +16,8 @@ export class NodeMailer {
         this.transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: 'cpay.payment.crypto@gmail.com',
-                pass: 'k123456789d'
+                user: 'hearverse.foundation@gmail.com',
+                pass:  'wktoqtuzcxljxxvp'
             }
         });
     }

@@ -23,94 +23,95 @@ export default class RegisterRepository implements IRegisterRepository {
     async registerUser(item: ReigsterUserModel): Promise<OperationResult<string>> {
         try {
 
-            const registerSetting = await cplayCplClientService.getRegisterSetting({
-                settingType: SETTING_ENUM.REGISTER_SETTING
+            // const registerSetting = await cplayCplClientService.getRegisterSetting({
+            //     settingType: SETTING_ENUM.REGISTER_SETTING
+            // });
+
+            // if (registerSetting.operationStatus == OperationStatus.SUCCESS) {
+
+            //     if (!registerSetting.setDefaultRegisterUserLevel) {
+            //         throw new InternalServerError("We Can not Find User Level Setting");
+            //     }
+
+            var find = '/';
+            var re = new RegExp(find, 'g');
+
+            let password = await bcrypte.hash(item.password, 5);
+            let hashCode = await (await bcrypte.hash(item.email, 5)).replace(re, '');
+
+            let displayName = item.firstName + ' ' + item.lastName;
+            let securityStamp = (new Date()).getTime().toString(36) + Math.random().toString(36).slice(2);
+
+            const findUserByEmail = await UnitOfWork.userRepository.FindByEmail(item.email);
+
+            if (findUserByEmail.success) {
+                return OperationResult.BuildFailur(Translate.translate[item.lang].ExistEmail());
+            }
+
+            let registerUser = await UserEntite.build({
+                firstName: item.firstName,
+                gender: undefined,
+                isAdmin: false,
+                isSupport: false,
+                confirmPhoneNumber: false,
+                userLevel: null,
+                password: password,
+                email: item.email,
+                lastName: item.lastName,
+                accountFail: 0,
+                avatar: undefined,
+                poster: undefined,
+                birthDate: undefined,
+                confirmEmail: false,
+                towFactorEnabled: false,
+                isActive: false,
+                locked: false,
+                lockedDate: undefined,
+                phoneNumber: undefined,
+                securityStamp: securityStamp
             });
 
-            if (registerSetting.operationStatus == OperationStatus.SUCCESS) {
+            // const setUserLevel = await UnitOfWork.UserActiveLevelRepository
+            //     .SetUserActiveLevel({
+            //         userId: registerUser.id,
+            //         level: registerSetting.setDefaultRegisterUserLevel
+            //     });
 
-                if (!registerSetting.setDefaultRegisterUserLevel) {
-                    throw new InternalServerError("We Can not Find User Level Setting");
-                }
+            // if (setUserLevel.success) {
 
-                var find = '/';
-                var re = new RegExp(find, 'g');
 
-                let password = await bcrypte.hash(item.password, 5);
-                let hashCode = await (await bcrypte.hash(item.email, 5)).replace(re, '');
-
-                let displayName = item.firstName + ' ' + item.lastName;
-                let securityStamp = (new Date()).getTime().toString(36) + Math.random().toString(36).slice(2);
-
-                const findUserByEmail = await UnitOfWork.userRepository.FindByEmail(item.email);
-
-                if (findUserByEmail.success) {
-                    return OperationResult.BuildFailur(Translate.translate[item.lang].ExistEmail());
-                }
-
-                let registerUser = await UserEntite.build({
-                    firstName: item.firstName,
-                    gender: undefined,
-                    isAdmin: false,
-                    isSupport: false,
-                    confirmPhoneNumber: false,
-                    userLevel: registerSetting.setDefaultRegisterUserLevel,
-                    password: password,
-                    email: item.email,
-                    lastName: item.lastName,
-                    accountFail: 0,
-                    avatar: undefined,
-                    poster: undefined,
-                    birthDate: undefined,
-                    confirmEmail: false,
-                    towFactorEnabled: false,
-                    isActive: false,
-                    locked: false,
-                    lockedDate: undefined,
-                    phoneNumber: undefined,
-                    securityStamp: securityStamp
+            const setRegisterSetting = await UnitOfWork.UserSettingRepository
+                .SetSetting<UserSettingModel>
+                (registerUser.id, {
+                    googleAuth: {
+                        isEnable: false,
+                        secretKey: null
+                    },
+                    notification: SendNotificationType.EMAIL,
+                    twofactor: {
+                        isEnable: false
+                    }
                 });
 
-                const setUserLevel = await UnitOfWork.UserActiveLevelRepository
-                    .SetUserActiveLevel({
-                        userId: registerUser.id,
-                        level: registerSetting.setDefaultRegisterUserLevel
-                    });
+            if (setRegisterSetting.success) {
 
-                if (setUserLevel.success) {
+                const generateActiveCode = await this.GenerateActivationCode(RedisKey.RegisterConfirm + registerUser.email, hashCode);
+                if (generateActiveCode.success) {
 
-                    registerUser.save();
-
-                    const setRegisterSetting = await UnitOfWork.UserSettingRepository
-                        .SetSetting<UserSettingModel>
-                        (registerUser.id, {
-                            googleAuth: {
-                                isEnable: false,
-                                secretKey: null
-                            },
-                            notification: SendNotificationType.EMAIL,
-                            twofactor: {
-                                isEnable: false
-                            }
-                        });
-
-                    if (setRegisterSetting.success) {
-
-                        const generateActiveCode = await this.GenerateActivationCode(RedisKey.RegisterConfirm + registerUser.email, hashCode);
-                        if (generateActiveCode.success) {
-
-                            await NodeMailer.sendActivationCodeEmail(item.lang, registerUser.email, displayName, hashCode);
-
-                        }
+                    let sendEmail = await NodeMailer.sendActivationCodeEmail(item.lang, registerUser.email, displayName, hashCode);
+                    if (sendEmail.success) {
+                        registerUser.save();
                     } else {
-                        throw new InternalServerError("can not set user setting");
+                        console.log('error send meil')
                     }
-
                 }
-
-            } else if (registerSetting.operationStatus == OperationStatus.FAIL) {
-                throw new InternalServerError("Error in GRPC Get Register Settign");
+            } else {
+                throw new InternalServerError("can not set user setting");
             }
+
+            // } else if (registerSetting.operationStatus == OperationStatus.FAIL) {
+            //     throw new InternalServerError("Error in GRPC Get Register Settign");
+            // }
             return OperationResult.BuildSuccessResult(Translate.translate[item.lang].MessageSendActivationEmail({ email: item.email }), '');
 
         } catch (error: any) {

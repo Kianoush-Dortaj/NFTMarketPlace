@@ -8,7 +8,7 @@ const fa: Translation = {
 	'EmailConfigurationTitle': 'ایمیل تایید حساب',
 	'EmailConfigurationDescription': 'از ثبت نام شما ممنونیم . لطفا روی لینک زیر کلیک کنید و ایمیل خود را تایید کنید',
 	'ClickHere': 'اینجا کلیک کنید',
-	'EmailConfigurationSubject': 'فعالسازی ایمیل [Cpay]',
+	'EmailConfigurationSubject': 'فعالسازی ایمیل [HearVers]',
 	'MessageSendActivationEmail' : 'ایمیل فعاسازی به آدرس {email} ارسال شد . لطفا صندوق ایمیل خود  را چک کنید .',
 	'ExistEmail':'ایمیل وارد شده تکراری است . لطفا یک ایمیل معتبر وارد کنید',
 	'PasswordAndConfirmNotMatched':'رمز عبور و تکرار رمز عبور یکسان نیستند',

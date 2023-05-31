@@ -1,4 +1,4 @@
 
 export default {
-    DatabaseUrl:'mongodb://root:d5zh6QsjAZxqm6sTwUAAYNSF@tommy.iran.liara.ir:30513/CPAY?authSource=admin'
+    DatabaseUrl:'mongodb://root:uKRJ4hw6qF4KVjn5VDFMHTyd@luca.iran.liara.ir:32690/my-app?authSource=admin'
 }

@@ -27,7 +27,7 @@ export default new class Startup {
         this.CreateServer();
         NodeMailer.Config();
         this.ConfigMidllware();
-        // this.ConfigDatabase();
+        this.ConfigDatabase();
 
     }
 

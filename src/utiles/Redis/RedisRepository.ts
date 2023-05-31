@@ -78,17 +78,20 @@ export class RedisManager {
   static Connet() {
 
     this.client = redis.createClient({
-      host: 'tommy.iran.liara.ir',
-      port: 32537,
-      password: 'fS01mgQfKgvMkc7oeR8tKZpn'
+      host: 'luca.iran.liara.ir',
+      port: 34670,
+      password: 'gjMSEMgcXKlkQhk5JBLq51tJ'
     });
 
 
     this.client.on("connect", function () {
+      console.log('connect redis')
       WinstonLogger.logger.info("Connect to Redis")
     });
 
     this.client.on("error", function () {
+      console.log('error redis')
+
       WinstonLogger.logger.error("Error Connect ot Redis")
     });
 

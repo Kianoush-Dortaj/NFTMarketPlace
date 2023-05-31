@@ -17,9 +17,9 @@ authRouter.post('/checkTwofactor', LoginController.UserCheckAuthTowfactor);
 
 authRouter.post('/checkGoogleAuth', LoginController.UserCheckAuth2FA);
 
-// authRouter.post('/checkforgetpasswordcode', AuthController.CheckForgetPasswordCode);
+authRouter.post('/checkforgetpasswordcode', AuthController.CheckForgetPasswordCode);
 
-// authRouter.post('/forgetpassword', AuthController.ForgetPassword);
+authRouter.post('/forgetpassword', AuthController.ForgetPassword);
 
 
 

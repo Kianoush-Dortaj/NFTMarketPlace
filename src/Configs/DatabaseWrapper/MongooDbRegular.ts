@@ -9,19 +9,22 @@ export default class MongooDbRegular implements IRegular {
     dataBaseConnection: mongoose.Connection | undefined;
 
     connect(): void {
-        console.log(config.dbconfig.DatabaseUrl)
+        
         mongoose.connect(config.dbconfig.DatabaseUrl, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true,
             authSource: 'admin'
         }, () => {
+            console.log('Connecto mongo')
+
             WinstonLogger.logger.info("Connecto To Databse");
         })
 
         this.dataBaseConnection = mongoose.connection;
 
         this.dataBaseConnection.on("error", err => {
+            console.log('error mongo')
             throw new InternalServerError(err.message);
         })
 

@@ -149,7 +149,7 @@ export default class UserSettingRepository implements IUserSettingRepository {
 
                 let findUser = await UnitOfWork.userRepository.FindUserById(userId);
 
-                if (findUser.success && findUser.result?.confirmPhoneNumber === false) {
+                if (findUser.success && (item == SendNotificationType.SMS || item == SendNotificationType.SMS_EMAIL) && findUser.result?.confirmPhoneNumber === false) {
                     return OperationResult.BuildFailur("you Should Confirm Phone Number and then active your notifcation with SMS");
                 }
 
