@@ -30,7 +30,7 @@ export class ContractConfig {
 
         this.tokenContract = new ethers.Contract(config.contractConfig.nftAddress, NFT.abi, signer);
         this.dNFT = new ethers.Contract(config.contractConfig.dortajNftAddress, DNFT.abi, signer);
-
+  
     }
 
     static async GetListTokenPrice(): Promise<OperationResult<string>> {
@@ -183,8 +183,8 @@ export class ContractConfig {
             if (!ipfs.result) {
                 return OperationResult.BuildFailur(ipfs.message);
             }
-
             let transaction = await this.tokenContract.mintToken(ipfs.result);
+
             const tx = await transaction.wait();
 
             const listPricing = await this.GetListTokenPrice();
@@ -213,7 +213,7 @@ export class ContractConfig {
             });
 
         } catch (error: any) {
-
+            console.log(error)
             throw new InternalServerError(error.messge);
         }
     }
