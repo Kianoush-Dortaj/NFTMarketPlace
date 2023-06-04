@@ -13,6 +13,7 @@ export class NFT implements INFT {
         try {
 
             const createNFT = await ContractConfig.CreateMarket(item.price, item.file);
+
             if (!createNFT.result) {
                 return OperationResult.BuildFailur(createNFT.message);
             }

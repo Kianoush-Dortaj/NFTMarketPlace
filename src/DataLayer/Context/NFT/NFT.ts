@@ -11,8 +11,7 @@ const NFTSchema = new mongoose.Schema({
         required: true
     },
     network: {
-        type: Schema.Types.ObjectId,
-        ref: 'Network',
+        type: String,
         required: true
     },
     title: {

@@ -26,7 +26,7 @@ export class ContractConfig {
     static async Initial(): Promise<any> {
 
         let provider = new ethers.providers.JsonRpcProvider(config.contractConfig.url);
-        const signer = provider.getSigner();
+        const signer =await provider.getSigner();
 
         this.tokenContract = new ethers.Contract(config.contractConfig.nftAddress, NFT.abi, signer);
         this.dNFT = new ethers.Contract(config.contractConfig.dortajNftAddress, DNFT.abi, signer);
@@ -175,15 +175,15 @@ export class ContractConfig {
     static async CreateMarket(nftPrice: string, fileAddress: string): Promise<OperationResult<ResultCreateNFT>> {
         try {
 
-            let testFile = fs.readFileSync(`${fileAddress}`);
-            let testBuffer = new Buffer(testFile);
+            // let testFile = fs.readFileSync(`${fileAddress}`);
+            // let testBuffer = new Buffer(testFile);
 
-            const ipfs = await IPFS.UploadFile(testBuffer);
-
-            if (!ipfs.result) {
-                return OperationResult.BuildFailur(ipfs.message);
-            }
-            let transaction = await this.tokenContract.mintToken(ipfs.result);
+            // const ipfs = await IPFS.UploadFile(testBuffer);
+    
+            // if (!ipfs.result) {
+            //     return OperationResult.BuildFailur(ipfs.message);
+            // }
+            let transaction = await this.tokenContract.mintToken('test');
 
             const tx = await transaction.wait();
 
@@ -209,11 +209,12 @@ export class ContractConfig {
                 nftAddress: config.contractConfig.nftAddress,
                 price: ethers.utils.formatUnits(price.toString(), "ether"),
                 tokenId: tokenId,
-                imageUrl: ipfs.result
+                imageUrl: 'dff'
             });
 
         } catch (error: any) {
-            console.log(error)
+            console.log('transaction', error);
+            
             throw new InternalServerError(error.messge);
         }
     }

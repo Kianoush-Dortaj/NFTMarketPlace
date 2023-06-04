@@ -1,7 +1,7 @@
 
 export default {
-    nftAddress: '0x760028e845f409a54a44535d4451f9048570BA3b',
-    dortajNftAddress: '0xc55da67d4d491Dc62626744E0D267175564AD29B',
+    nftAddress: '0xe6d50181052c590c4c1B3528d57485394551DAE5',
+    dortajNftAddress: '0x95CeBd62e3Fc34527894363d8E13118646b0a2A4',
     url : 'HTTP://127.0.0.1:7545'
 }
 

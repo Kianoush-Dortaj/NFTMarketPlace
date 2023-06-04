@@ -137,7 +137,7 @@ export default new class NFTController extends BaseController {
                     description: desciption,
                     file: file,
                     network: network,
-                    owner: undefined,
+                    owner: userId,
                     price: nftPrice,
                     title: title
                 });
